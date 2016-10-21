@@ -59,7 +59,7 @@ def validateURL(inputName):
     except:
         print('Unable to find ' + baseURL + '.Exiting the script\n')  
         exit(1)
-    for n in range(1,10):
+    for n in range(1,50):
         fullURL = baseURL + "-" + str(n)
         try:
             resp = urllib.request.urlopen(fullURL)
